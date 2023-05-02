@@ -1,3 +1,4 @@
 .gitirnore
 list.txt
 *.pptx
+.DS_Store
