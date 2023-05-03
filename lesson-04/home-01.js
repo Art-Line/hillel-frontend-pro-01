@@ -5,7 +5,11 @@
 const task1 = document.querySelector('#task-01');
 let memory1 = '';
 for (let i = 10; i <= 20; i++) {
-    memory1 += i + ', ';
+    if (i === 20) {
+        memory1 += i;
+    } else {
+        memory1 += i + ', ';
+    }
 }
 task1.textContent = memory1;
 
@@ -125,9 +129,9 @@ document.querySelector('#task-11').textContent = memory11;
 
 let memory12 = '';
 memory12 += '<table class="table">'
-for(let i = 1; i <= 9; i++) {
+for(let i = 1; i <= 10; i++) {
     memory12 += '<tr>'
-    for(let j = 1; j <= 9; j++) {
+    for(let j = 1; j <= 10; j++) {
         memory12 += '<td>' + j + ' * ' + i + ' = ' + i*j + '</td>';
     }
     memory12 += '</tr>'
