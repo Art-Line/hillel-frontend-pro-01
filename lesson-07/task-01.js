@@ -3,7 +3,6 @@
 // excluded as the second argument in the function
 // pow(num, degree)
 
-
 function pow(num, degree) {
     if (degree > 1) {
         return num * pow(num,  degree - 1)
